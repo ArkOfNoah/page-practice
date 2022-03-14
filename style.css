@@ -96,6 +96,7 @@ a {
   line-height: 1.71428;
   font-weight: 400;
   letter-spacing: -0.01em;
+  cursor: pointer;
 }
 
 /* button */
@@ -107,6 +108,7 @@ button {
   width: 140px;
   height: 48px;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .button--blue {
@@ -179,6 +181,7 @@ button {
 #program {
   color: #009b4d;
   margin-bottom: 8px;
+  display: block;
 }
 
 .programs {
@@ -190,11 +193,9 @@ button {
   margin-bottom: 24px;
 }
 
-.program__decription {
+.program__description {
   margin-bottom: 32px;
 }
-
-/* programs__box 여기서 다시*/
 
 .program__box {
   display: flex;
@@ -211,6 +212,7 @@ button {
 
 .program__box {
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 .program__box img {
@@ -238,6 +240,11 @@ button {
 
 .curriculum {
   padding: 0 15px;
+  margin-bottom: 80px;
+}
+
+.curriculum img {
+  display: none;
 }
 
 .curriculum__title {
@@ -254,14 +261,13 @@ button {
   margin-bottom: 48px;
 }
 
-.dectail__description {
+.detail__description {
   font-size: 15px;
   line-height: 1.46666;
   letter-spacing: -0.01em;
-  margin-bottom: 80px;
 }
 
-.dectail__description:nth-child(1) {
+.detail__description:nth-child(1) {
   margin-bottom: 40px;
 }
 
@@ -286,7 +292,7 @@ button {
   margin-bottom: 16px;
 }
 
-.banner__description p {
+.banner__img p {
   margin-bottom: 24px;
 }
 
@@ -314,8 +320,10 @@ button {
 }
 
 .banner__Terms a {
+  cursor: pointer;
   color: blue;
   text-decoration: underline;
+  font-family: 'Work Sans' sans-serif;
 }
 
 /* footer */
@@ -328,4 +336,202 @@ button {
 .footer a {
   margin-bottom: 8px;
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 22px;
+    line-height: 1.45454;
+  }
+  
+  h1 {
+    font-size: 70px;
+    line-height: 1.02857;
+  }
+
+  h2 {
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 1.38461;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  strong {
+    font-size: 22px;
+    line-height: 1.090;
+  }
+
+  button {
+    width: 160px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 1.555555;
+  }
+
+  .landing__title {
+    margin-bottom: 32px;
+  }
+
+  .landing__description {
+    margin-bottom: 32px;
+  }
+
+  .landing__button-groups button:first-child {
+    margin-right: 16px;
+  }
+
+/* testimonials */
+
+  .testimonials {
+    padding: 80px 30px;
+    flex-direction: row;
+  }
+
+  .testimonial__description {
+    margin-bottom: 80px;
+  }
+
+  .testimonial {
+    margin-right: 32px;
+    text-align: center;
+  }
+
+  /* programs__header */
+  #program {
+    margin-bottom: 16px;
+  }
+  .programs {
+    text-align: center;
+  }
+
+  .programs__box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 96px;
+  }
+
+  .program__box {
+    min-width: 30%;
+  }
+
+  .program__title {
+    margin-bottom: 32px;
+  }
+
+  .program__description {
+    margin-bottom: 70px;
+  }
+
+
+  .program__box:nth-child(2) {
+    background-color: #3141C5;
+    color: #FFFFFF;
+  }
+
+  /* curriculum */
+
+  #curriculum {
+    font-size: 22px;
+    line-height: 1.0909;
+    margin-bottom: 16px;
+    display:block;
+  }
+
+  .curriculum {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .curriculum header {
+    width: 50%;
+  }
+
+
+
+  .curriculum__title {
+    margin-bottom: 32px;
+    margin-right: 60px;
+  }
+
+  .curriculum__description {
+    margin-bottom: 72px;
+  }
+
+  .curriculum img {
+    min-width: 300px;
+    height: 301px;
+    display: inline-block;
+  }
+  
+  .detail {
+    display: flex;
+    font-size: 18px;
+    line-height: 1.44444;
+    margin-bottom: 96px;
+  }
+
+  /* banner */
+
+  .banner {
+    height: 460px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner__img {
+    display:inline-block;
+    width: 270px;
+    height: 275px;
+    margin-right: 50px;
+  }
+
+  .banner__input {
+    text-align: left;
+    width: 400px;
+  }
+
+  .banner__input h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .banner__input p {
+    margin-bottom: 24px;
+  }
+
+  .banner__input input {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 4px;
+  }
+
+  .banner__input button {
+    width:115px;
+    height: 48px;
+  }
+
+  .banner__Terms {
+    margin: 0;
+  }
+
+
+  /* footer */
+
+  .footer {
+    display: flex;
+  }
+
+  .footer a {
+    margin-right: 16px;
+  }
 }
